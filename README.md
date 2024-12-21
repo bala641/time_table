@@ -1,95 +1,138 @@
-# Ex-03-Timetable
+# Ex03 Time Table
+## Date:21.12.24
+
 ## AIM
-To Write a html webpage page to display your timetable.
+To write a html webpage page to display your slot timetable.
 
-# ALGORITHM
+## ALGORITHM
 ### STEP 1
-create a simple table using table tag
+Create a Django-admin Interface.
+
 ### STEP 2
-Add header row using th tag
+Create a static folder and inert HTML code.
+
 ### STEP 3
-Add your timetable
+Create a simple table using ```<table>``` tag in html.
+
 ### STEP 4
-Execute the program
+Add header row using ```<th>``` tag.
 
-# CODE
+### STEP 5
+Add your timetable using ```<td>``` tag.
+
+### STEP 6
+Execute the program using runserver command.
+
+## PROGRAM
+
 ```
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Time Table</title>
-    </head>
     <body>
-<TABLE BORDER="3" width="950" bgcolor="white" cellspacing="3" cellpadding="2"> 
-    <TR> 
-        <TH colspan="4" align="center">TIME TABLE</TH>
-    </TR>
-    <TR> 
-        <TD BORDER="4"rowspan="2"><b>Reference Number:</b></TD>
+        <img src="logo.png">
 
-    </TR>
-    <TR>
-        <TD BORDER="4"><b>23003501</b></TD>
-        <TD BORDER="4">Name:</TD>
-        <TD BORDER="4">T.Thrishendra</TD>
-    </TR>
-    <TR> 
-        <TD rowspan="2"><b>DAYS</b></TD>
-
-    </TR>
-    <TR>
-        <TD>1</TD> 
-        <TD>2</TD>
-        <TD>3</TD>
-
-    </TR>
-    <TR> 
-        <TD rowspan="2" width="25%">Monday</TD>
-
-    </TR>
-    <TR>
-        <TD width="25%">19AI303/Sridar.S</TD> 
-        <TD width="25%">-</TD>
-        <TD width="25%">19EY701/Jacob Sid Mathew</TD>
-    </TR>
-    <TR> 
-        <TD rowspan="2" width="25%">Tuesday</TD>
-
-    </TR>
-    <TR>
-        <TD width="25%">19AI301C/Dr.G.Bhuvaneswari</TD>
-        <TD width="25%">19EE302/Rajshekar</TD>
-    </TR>
-    <TR> 
-        <TD rowspan="2" width="25%">Wednesday</TD>
-
-    </TR>
-    <TR>
-        <TD width="25%">19AI301C/Dr.G.Bhuvaneswari</TD>
-        <TD width="25%">19AI414/Dr.Karthi Govindharaju</TD>
-        <TD width="25%">19AI303/Sridhar.S</TD>
-    </TR>
-    <TR> 
-        <TD rowspan="2" width="25%">Thursday</TD>
-
-    </TR>
-    <TR>
-        <TD width="25%">19AI414/Dr.Karthi Govindharaju</TD> 
-        <TD width="25%">19AI301C/Dr.G.Bhuvaneswari</TD>
-        <TD width="25%">19EN302/Rajshekar</TD>
-    </TR>
-    <TR> 
-        <TD rowspan="2" width="25%">Friday</TD>
-
-    </TR>
-    <TR>
-        <TD width="25%">19AI301C/Dr.G.Bhuvaneswari</TD>
-        <TD width="25%">19AI414/Dr.Karthi Govindharaju</TD> 
-    </TR>
-    </TABLE>
+        <table border="1">
+            <caption>SLOT TIMETABLE-BALA B (24900698)</caption>
+            <tr bgcolor ="yellow">
+                <th>Day/Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr bgcolor="cyan">
+                <td>8-10 </td>
+                <td colspan="3"> Free slot</td>
+                <td>EDM</td>
+                <td>FWAD</td>
+                <td>EDM</td>
+            </tr>
+            <tr bgcolor="cyan">
+                <td>10-12</td>
+                <td>DE</td>
+                <td>MAT</td>
+                <td>FUN C</td>
+                <td>Career</td>
+                <td>FUN C</td>
+                <td>EDM</td>
+            </tr>
+            <tr bgcolor="cyan">
+                <td>12-1</td>
+                <td colspan="6">LUNCH</td>
+            </tr>
+            <tr bgcolor="cyan">
+                <td>1-3</td>
+                <td>FWAD</td>
+                <td>FWAD</td>
+                <td>Mentor</td>
+                <td>DE</td>
+                <td colspan="2">Free slot </td>
+            </tr>
+            <tr bgcolor="cyan">
+                <td>3-5</td>
+                <td colspan="2">Free slot</td>
+                <td colspan="2">Chem</td>
+                <td colspan="2">Free slot</td>
+            </tr>
+        </table>
+        <br>
+        <table border="1" cellspacing="15" cellpadding="2">
+        <tr>
+        <th>S.NO</th>
+        <th>Course Code</th>
+        <th>Course Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>19AI414</td>
+            <td>Fundamentals of Web Applications and Designs</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>19AI304</td>
+            <td>Fundamentals of C programming</td>
+            </tr>
+        <tr>
+            <td>3</td>
+            <td>19AI302</td>
+            <td>Engineering Design and Modelling</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>19CY205</td>
+            <td>Principles of Chemistry in Engineering</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>19EY708</td>
+            <td>Career Devolopment and Skills</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>19MA201</td>
+            <td>Calculus and Matrix Algebra </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>19EE404</td>
+            <td>Digital Electronics</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>ECAM-SCOFT</td>
+            <td>Mentor meet</td>
+        </tr>
+        </table>
+        
     </body>
 </html>
 ```
-# OUPUT:
-![Screenshot 2023-11-18 112715](https://github.com/Thrishendra/ODD2023-WT-Ex-03-Timetable/assets/145742464/072eb02b-00c0-4ffc-a641-529df9d15473)
+
+## OUTPUT
+
+![exp 3 slot](https://github.com/user-attachments/assets/bee5cc8c-0601-4339-8f68-04a574252f90)
+
+## RESULT
+The program for creating slot timetable using basic HTML tags is executed successfully.
 
