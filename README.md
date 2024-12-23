@@ -27,6 +27,7 @@ Execute the program using runserver command.
 
 ```
 <html>
+    <center>
     <body>
         <img src="logo.png">
 
@@ -126,6 +127,7 @@ Execute the program using runserver command.
         </table>
         
     </body>
+    </center>
 </html>
 ```
 
